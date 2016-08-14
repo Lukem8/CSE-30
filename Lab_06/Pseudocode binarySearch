@@ -1,0 +1,15 @@
+
+	Algorithm BinarySearch(string* arr, array_size, k)
+		arr is a string array of size array_size
+		k is key we are searching for
+		low = 0, high = array_size
+		mid = (high + low) /2 
+		while mid != k
+			if mid > k
+				low = mid+1
+				continue
+			if mid < k
+				high = mid-1
+				continue
+			if mid == k 
+				return mid

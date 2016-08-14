@@ -1,0 +1,19 @@
+PSEUDOCODE
+
+	Algorithm arrayIncreasing(A, n)
+	Create array A of size n given by the user
+	if n is not in range
+		Output ERROR
+	Receive data to A from user using scanf
+
+	for i <- 0 to n-1 do
+		if A[n] > A[n+1]
+			Output not increasing
+		else
+			Output increasing
+	for i <- 0 to n-1
+		Output A[i] + " "
+
+
+
+Collaborator: Majok Ring

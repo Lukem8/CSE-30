@@ -1,0 +1,23 @@
+
+	Pseudocode
+	
+
+	Function combineString(str, n)
+	save <- str
+	
+	for int i = 1 -> count 
+		str = str+save
+	end for
+	return str
+	
+
+	Function main()
+	
+	s1, times;
+	
+	get use input for string s1 and int times
+
+	if (times > 0)
+		combineString(s1,times)
+	
+	end main

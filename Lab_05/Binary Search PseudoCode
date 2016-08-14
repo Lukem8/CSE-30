@@ -1,0 +1,22 @@
+	
+	Algorithm Binarysearch(A, hi, low, k)
+	k is key we are searching for
+	Array A with high index hi
+
+	low = 0
+	hi = sizeOf A
+	
+	middle = (hi + low) /2
+	if middle > k
+		hi = middle -1
+		return Binarysearch(A, hi, low, k)
+	else if middle < k
+		low = middle +1
+		return (Binarysearch(A, hi, low, k)
+	if middle = k
+		return middle
+
+
+
+Collaborators
+Majok Ring

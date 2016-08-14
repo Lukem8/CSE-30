@@ -1,0 +1,42 @@
+	
+
+		Pseudocode 
+		
+		Algorithm sortArr(A, n, isAscending)			// Selection sort Algorithm
+			
+			max, temp;
+
+			if (isAscending == true)		// do ascending version
+				for i = n-1 -> 0
+					max <- A[0]
+					imax = 0
+					for j = 1 -> i
+						if A[j] > A[imax]
+							max = A[j]
+							imax = j
+						end if
+					end for
+					if imax != i	
+						temp = A[i]
+						A[i] = A[imax]
+						A[imax] = temp
+					end if
+				end for
+
+			if (isAscending == false)		// do descending version
+				for i = n-1 -> 0
+					max <- A[0]
+					imax = 0
+					for j = 1 -> i
+						if A[j] < A[imax]
+							max = A[j]
+							imax = j
+						end if
+					end for
+					if imax != i	
+						temp = A[i]
+						A[i] = A[imax]
+						A[imax] = temp
+					end if
+				end for
+			

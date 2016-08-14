@@ -1,0 +1,25 @@
+
+	Algorithm sortArr(A,n,isAscending)	// sorting algorithm using insertion sort
+
+	A <- new array of n integers
+	if (isAscending == true)		//algorithm for ascending
+		for i = 1 -> n-1
+			saved <- A[i]
+			j <- i
+			while j > 0 AND A[j-1] > saved
+				A[j] <- A[j-1]
+				j <- j-1
+			end while 
+			A[j] = saved
+		end for
+		
+	else if (isAscending == false)		algorithm for descending
+		for i = 1 -> n-1
+			saved <- A[i]
+			j <- i
+			while j > 0 AND A[j-1] < saved
+				A[j] <- A[j-1]
+				j <- j-1
+			end while 
+			A[j] = saved
+		end for
